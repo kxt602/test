@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>校园活动线上展</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    /* 全局样式设置 */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 顶端部分样式 */
+    header {
+  		background-image: url('./images/banner_bg.jpg'); /* 设置背景图片路径 */
+      background-color: #f0f0f0;
+      padding: 0px 0;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      font-family: '迷你简太极', cursive;
+      font-size: 50px;
+      color: white;
+      margin-left: 80px;
+      letter-spacing: 0.5em;
+    }
+    
+    header h1 a {
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+    }
+        
+    header div {
+      text-align: center;
+      margin-right: 80px;
+    }
+
+    header div p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    header div p:first-child {
+      font-family: '宋体', cursive;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    header div p:not(:first-child) {
+      font-family: '宋体', cursive;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+
+    header div p a {
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      width: 150px;
+    }
+
+      /* 中间部分样式 */
+   .middle-section {
+      margin: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 80vh; /* 使用视口高度单位，设置为视口高度的80%，可根据需求调整比例 */
+      border: none; /* 去除边框 */
+    }
+
+    /* 底端部分样式 */
+    footer {
+  		background-image: url('./images/menubar3.gif'); /* 设置背景图片路径 */
+      
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    footer p {
+      margin: 0;
+      color: white;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 顶端部分 -->
+  <header>
+    <h1><a href="#" target="_self">校园活动线上展</a></h1>
+    <div>
+      <p>
+      	<a href="main.html" target="contentFrame">校园活动主页</a>
+      </p>
+      <p>
+      	<a href="ydh/index.html" target="contentFrame">运动会</a>
+      	<a href="ysj/index.html" target="contentFrame">艺术节</a>
+      	<a href="yyh/index.html" target="contentFrame">音乐会</a>
+      	<a href="msz/index.html" target="contentFrame">美术展</a>
+      	<a href="kjj/index.html" target="contentFrame">科技节</a>
+      	<a href="xlhd/index.html" target="contentFrame">心理活动</a>
+      </p>
+      
+      <p>
+      	<a href="ydh/index.html" target="contentFrame">春节</a>
+      	<a href="ydh/index.html" target="contentFrame">元宵节</a>
+      	<a href="ydh/index.html" target="contentFrame">劳动节</a>
+      	<a href="ydh/index.html" target="contentFrame">端午节</a>
+      	<a href="ydh/index.html" target="contentFrame">中秋节</a>
+      	<a href="ydh/index.html" target="contentFrame">国庆节</a>
+      </p>      
+    </div>
+  </header>
+
+  <!-- 中间部分 -->
+  <div class="middle-section">
+    <iframe id="contentFrame" name="contentFrame" src="main.html" frameborder="0"></iframe>
+  </div>
+
+  <!-- 底端部分 -->
+  <footer>
+    <p>Copyright &copy; 2024 通辽初中信息技术团队</p>
+  </footer>
+</body>
+
+</html>
